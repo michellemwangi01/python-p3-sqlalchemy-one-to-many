@@ -47,8 +47,10 @@ if __name__ == '__main__':
                 comment=fake.sentence(),
                 game_id=game.id
             )
+            print(review)
 
             reviews.append(review)
+    print(reviews)
     
     session.bulk_save_objects(reviews)
     session.commit()
